@@ -1,0 +1,75 @@
+#propertiesSection {
+    width: 100vw;
+    padding: 50px 0; /* Ajusta el espacio superior e inferior */
+    position: absolute;
+    height: 792px;
+
+  }
+  
+  #propertiesTitles {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  h6{
+    color: #00C194 !important;
+  }
+
+
+.bg-text{
+    /* Join Us */
+position: absolute;
+left: 42%;
+top: 3%;
+width: 209px;
+height: 109px;
+white-space: nowrap;
+
+font-family: 'Mr Dafoe';
+font-style: italic;
+font-weight: 400;
+font-size: 78px;
+line-height: 109px;
+/* identical to box height */
+text-align: center;
+
+
+color: #DBEEEA;
+}
+
+.mb-3{
+    text-align: left;
+}
+.col{
+    border-radius: 1rem;
+}
+.col-login{
+    background-color: grey;
+}
+
+#modalSesionContent{
+  padding: 2rem 6rem;
+  width: 500px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#modalSesion{
+
+  white-space: nowrap;
+}
+#imgAlert{
+  width: 50%;
+}
+#opsAlert{
+  font-weight: bold;
+  font-size: larger;
+}
+#redirectRegister{
+  cursor: pointer;
+}
