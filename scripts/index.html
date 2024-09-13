@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="../assets/Príncipe fresco.png" alt="Principe Fresco Logo" id="logo">
+        <a href="#" id="shop-btn">Shop</a>
+        <a href="#" id="collections-btn">Collections</a>
+        <button id="profile-btn">Profile</button>
+        <button id="cart-btn">Cart</button>
+    </nav>
+
+    <!-- Sections -->
+    <section id="shop-section" class="hidden">
+        <h1>Shop</h1>
+        <div id="shop-items"></div>
+    </section>
+
+    <section id="collections-section" class="hidden">
+        <h1>Collections</h1>
+        <div id="collections-list"></div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart-modal" class="close">&times;</span>
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-admin-modal" class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="admin-login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
