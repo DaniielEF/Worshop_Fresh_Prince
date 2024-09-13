@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
           productElement.classList.add('product-card');
           
           productElement.innerHTML = `
-              <img src="${product.imagen_1}" alt="${product.nombre}" class="product-image">
+              <img class="imgShopP" src="${product.imagen_1}" alt="${product.nombre}" class="product-image">
               <h3 class="product-name">${product.nombre}</h3>
               <p class="product-price">$${product.precio.toFixed(2)}</p>
               <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Función para agregar un producto al carrito
   const addToCart = (productId) => {
-      fetch('/server/db.json')
+      fetch('/data/db.json')
           .then(response => response.json())
           .then(data => {
               const product = data.collection.find(p => p.id === productId);
@@ -201,4 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Cargar los productos al iniciar la página
   loadProducts();
+
+
 });
